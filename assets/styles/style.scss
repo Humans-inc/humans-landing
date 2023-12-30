@@ -16,10 +16,16 @@
 
 body {
   min-height: 100vh;
-  background: #EFEFEF;
+  background: #efefef;
 }
-a, a:is(:hover, :focus, :active, :visited, :link) {
+a,
+a:is(:hover, :focus, :active, :visited, :link) {
   text-decoration: none;
+}
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .custom-container {
@@ -33,6 +39,20 @@ a, a:is(:hover, :focus, :active, :visited, :link) {
   }
 }
 
+.section {
+  &__title {
+    margin-bottom: 40px;
+    font-family: 'Akrobat', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #2e2e2e;
+  }
+}
+
 @import './header';
 @import './hero';
 @import './constructor';
+@import './workshops';

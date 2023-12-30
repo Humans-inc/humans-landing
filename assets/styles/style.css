@@ -6,11 +6,18 @@
 
 body {
   min-height: 100vh;
-  background: #EFEFEF;
+  background: #efefef;
 }
 
-a, a:is(:hover, :focus, :active, :visited, :link) {
+a,
+a:is(:hover, :focus, :active, :visited, :link) {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .custom-container {
@@ -21,6 +28,17 @@ a, a:is(:hover, :focus, :active, :visited, :link) {
 }
 .custom-container * {
   font-family: "Onest", sans-serif;
+}
+
+.section__title {
+  margin-bottom: 40px;
+  font-family: "Akrobat", sans-serif;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #2e2e2e;
 }
 
 .header {
@@ -253,5 +271,103 @@ a, a:is(:hover, :focus, :active, :visited, :link) {
   font-weight: 500;
   line-height: normal;
   color: #fff;
+  background: #8388ff;
+}
+
+.workshops {
+  margin-bottom: 80px;
+}
+.workshops__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.workshop {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  height: 100%;
+  padding: 16px;
+  border-radius: 24px;
+  background: #2e2e2e;
+}
+.workshop__img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  height: 227px;
+  margin-bottom: 20px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #d3d3d3;
+}
+.workshop__bage {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127%;
+  color: #fff;
+}
+.workshop__bage_price {
+  background: #12d28d;
+}
+.workshop__bage_version {
+  background: #8388ff;
+}
+.workshop__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%;
+  color: #fafafa;
+}
+.workshop__description {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127%;
+  color: #d3d3d3;
+}
+.workshop__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 16px;
+}
+.workshop__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 21px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  color: #fff;
+  background: #4a4949;
+}
+.workshop__buy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  border-radius: 8px;
   background: #8388ff;
 }/*# sourceMappingURL=style.css.map */
