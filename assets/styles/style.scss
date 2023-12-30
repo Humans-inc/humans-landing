@@ -1,2 +1,36 @@
 @import './fonts';
 @import './variables';
+
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #EFEFEF;
+}
+a, a:is(:hover, :focus, :active, :visited, :link) {
+  text-decoration: none;
+}
+
+.custom-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  * {
+    font-family: 'Onest', sans-serif;
+  }
+}
+
+@import './header';

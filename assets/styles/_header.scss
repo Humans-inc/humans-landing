@@ -1,0 +1,39 @@
+.header {
+  padding: 40px 0;
+
+  &__container {
+    @include flex(row, center, flex-start);
+    gap: 24px;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  &__nav {
+    @include flex(row, center, flex-end);
+    gap: 24px;
+    list-style: none;
+  }
+
+  &__nav-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127%;
+    color: #505050;
+  }
+
+  &__profile {
+    @include flex(row, center, center);
+    gap: 10px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFF;
+    background: #525252;
+  }
+}
