@@ -1,0 +1,114 @@
+.hero {
+  padding: 74px 0 98px;
+  &__title {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto 24px;
+    font-family: 'Akrobat', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 107%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2e2e2e;
+    span {
+      font-family: inherit;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 870px;
+    margin: 0 auto 80px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127%;
+    text-align: center;
+    color: #505050;
+    text-wrap: balance;
+  }
+
+  &__bottom {
+    & > div {
+      width: 35%;
+    }
+    @include flex(row, flex-start, space-between);
+    gap: 107px;
+  }
+
+  &__button {
+    display: block;
+    align-self: center;
+    padding: 31px 36px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 107%;
+    text-align: center;
+    color: #fff;
+    background: #12d28d;
+  }
+
+  &__bonus {
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #787878;
+  }
+  &__bonus-progress {
+    position: absolute;
+    top: 3px;
+    left: 140px;
+    display: block;
+  }
+  &__bonus-arrow {
+    position: absolute;
+    top: 102px;
+    left: -67px;
+    display: block;
+  }
+}
+
+.students {
+  &__title {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 107%;
+    color: #2e2e2e;
+  }
+
+  &__description {
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 107%;
+    color: #787878;
+  }
+  &__photos {
+    @include flex(row, center, flex-start);
+  }
+
+  &__photo-wrap {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    overflow: hidden;
+    &:not(:first-child) {
+      margin-left: -16px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
